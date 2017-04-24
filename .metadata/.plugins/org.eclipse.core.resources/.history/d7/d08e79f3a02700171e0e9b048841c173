@@ -1,0 +1,41 @@
+package hw5;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class InformationRetrieval {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(
+		        new InputStreamReader(new FileInputStream("descriptions.txt")));
+		try {
+		    String line;
+		    while ((line = br.readLine()) != null) {
+		    	//ignore lines with laboratory 
+		        if(line.toLowerCase().contains("prerequisite")) {
+		        	String preReqLine = line;
+		        	/*for(int i = 0; i < preReqLine.length(); i++) {
+		        		char ch = preReqLine.charAt(i);
+		        		if(i != (preReqLine.length()-1)) {
+		        			char nextCh = preReqLine.charAt(i+1);
+		        			if(Character.isUpperCase(ch) && Character.isUpperCase(nextCh)) {
+		        				System.out.println(preReqLine);
+		        			}
+		        		}
+		        				
+		        		
+		        	} */
+		        	System.out.println(preReqLine);
+		        }
+		    	
+		    }
+		} finally {
+		    br.close();
+		}
+
+
+	}
+
+}
