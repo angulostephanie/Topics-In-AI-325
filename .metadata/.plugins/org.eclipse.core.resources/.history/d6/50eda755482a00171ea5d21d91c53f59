@@ -1,0 +1,21 @@
+package hw5;
+
+import java.util.Scanner;
+public class PieEatingContest {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter in weight in pounds");
+		String input = s.next();
+		
+		double inputD = Double.valueOf(input);
+		if(inputD > 30 && inputD < 250) {
+			System.out.println("congrats you can enter the contest");
+		} else {
+			System.out.println("nah fam");
+		}
+		
+
+	}
+
+}
