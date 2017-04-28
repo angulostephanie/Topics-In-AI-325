@@ -63,17 +63,14 @@ public class InformationRetrieval {
 			        				//parsedLines.add(extraParsedLine);
 			        				//System.out.println(extraParsedLine);
 			        				int count = 0;
-			        				int k = 0;
 			        				for(int j = 0; j < extraParsedLine.length(); j++) {
 			        					if(Character.isWhitespace(extraParsedLine.charAt(j))) {
 			        						count++;
 			        						if(count%2 == 0) {
 			        							preReq = extraParsedLine.substring(0,j+1);
-			        							//k = j;
 			        							extraParsedLine = extraParsedLine.substring(j+1);
-			        							System.out.println(preReq + ".");
+			        							System.out.println(preReq);
 			        							System.out.println(extraParsedLine);
-			        							
 			        						}
 			        						
 			        					}

@@ -71,7 +71,7 @@ public class InformationRetrieval {
 			        							preReq = extraParsedLine.substring(0,j+1);
 			        							//k = j;
 			        							extraParsedLine = extraParsedLine.substring(j+1);
-			        							System.out.println(preReq + ".");
+			        							System.out.println(preReq);
 			        							System.out.println(extraParsedLine);
 			        							
 			        						}

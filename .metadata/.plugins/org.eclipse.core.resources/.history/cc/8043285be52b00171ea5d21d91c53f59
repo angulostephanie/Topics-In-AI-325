@@ -58,7 +58,7 @@ public class InformationRetrieval {
 			        				} 
 			        			}
 			        			if(!extraParsedLine.isEmpty()) {
-			        				extraParsedLine = extraParsedLine.substring(1) + " ";
+			        				extraParsedLine = extraParsedLine.substring(1) + " .";
 			        				
 			        				//parsedLines.add(extraParsedLine);
 			        				//System.out.println(extraParsedLine);
@@ -71,7 +71,7 @@ public class InformationRetrieval {
 			        							preReq = extraParsedLine.substring(0,j+1);
 			        							//k = j;
 			        							extraParsedLine = extraParsedLine.substring(j+1);
-			        							System.out.println(preReq + ".");
+			        							System.out.println(preReq);
 			        							System.out.println(extraParsedLine);
 			        							
 			        						}

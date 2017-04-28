@@ -58,24 +58,18 @@ public class InformationRetrieval {
 			        				} 
 			        			}
 			        			if(!extraParsedLine.isEmpty()) {
-			        				extraParsedLine = extraParsedLine.substring(1) + " ";
-			        				
+			        				extraParsedLine = extraParsedLine.substring(1);
 			        				//parsedLines.add(extraParsedLine);
 			        				//System.out.println(extraParsedLine);
 			        				int count = 0;
-			        				int k = 0;
 			        				for(int j = 0; j < extraParsedLine.length(); j++) {
 			        					if(Character.isWhitespace(extraParsedLine.charAt(j))) {
 			        						count++;
 			        						if(count%2 == 0) {
-			        							preReq = extraParsedLine.substring(0,j+1);
-			        							//k = j;
-			        							extraParsedLine = extraParsedLine.substring(j+1);
-			        							System.out.println(preReq + ".");
-			        							System.out.println(extraParsedLine);
-			        							
+			        							preReq = extraParsedLine.substring(0,j);
+			        							extraParsedLine = extraParsedLine.substring(j);
+			        							System.out.println(preReq);
 			        						}
-			        						
 			        					}
 			        					
 			        				}

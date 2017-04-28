@@ -15,9 +15,9 @@ public class InformationRetrieval {
 		try {
 			ArrayList<ArrayList> preReqs = new ArrayList<ArrayList>();
 			ArrayList<String> parsedLines = new ArrayList<String>();
-		    String line,preReqLine,betterPreReqLine, preReq;
+		    String line,preReqLine,betterPreReqLine;
 		    char firstD,secondD,thirdD, space, ch, chNext;
-		    //int sum = 0;
+		    int sum = 0;
 		    while ((line = br.readLine()) != null) {
 		        if(line.toLowerCase().contains("prerequisite")) {
 		        	preReqLine = line;
@@ -33,7 +33,7 @@ public class InformationRetrieval {
 			        		if(Character.isUpperCase(ch) && Character.isUpperCase(chNext) && Character.isWhitespace(space) 
 			        				&& Character.isDigit(firstD) && Character.isDigit(secondD) && Character.isDigit(thirdD)) {
 			        			betterPreReqLine = preReqLine;
-			        			//System.out.println(betterPreReqLine);
+			        			System.out.println(betterPreReqLine);
 			        			String parsedLine = "";
 			        			for(int j = 1; j < betterPreReqLine.length(); j++) {
 					        		if(Character.isUpperCase(betterPreReqLine.charAt(j)) || Character.isDigit(betterPreReqLine.charAt(j)) || Character.isWhitespace(betterPreReqLine.charAt(j))) {
@@ -57,30 +57,10 @@ public class InformationRetrieval {
 				        				}
 			        				} 
 			        			}
-			        			if(!extraParsedLine.isEmpty()) {
-			        				extraParsedLine = extraParsedLine.substring(1) + " ";
-			        				
-			        				//parsedLines.add(extraParsedLine);
-			        				//System.out.println(extraParsedLine);
-			        				int count = 0;
-			        				int k = 0;
-			        				for(int j = 0; j < extraParsedLine.length(); j++) {
-			        					if(Character.isWhitespace(extraParsedLine.charAt(j))) {
-			        						count++;
-			        						if(count%2 == 0) {
-			        							preReq = extraParsedLine.substring(0,j+1);
-			        							//k = j;
-			        							extraParsedLine = extraParsedLine.substring(j+1);
-			        							System.out.println(preReq + ".");
-			        							System.out.println(extraParsedLine);
-			        							
-			        						}
-			        						
-			        					}
-			        					
-			        				}
-			        				//sum+= 1; //513
-			        			}
+			        			parsedLines.add(extraParsedLine);
+			        			//System.out.println(extraParsedLine);
+			        					        			
+			        			sum+= 1; //548
 			        			break; //needed so it does not repeat lines
 			        		} 	
 			        		
@@ -90,15 +70,14 @@ public class InformationRetrieval {
 		        	
 		        	
 		        }
-		    
+		    	
 		    }
-		    //System.out.println(sum);
+		    System.out.println(sum);
 		} finally {
 		    br.close();
 		}
 
 
 	}
-	
 
 }
