@@ -1,23 +1,30 @@
 package hw5;
 
+import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.lang.Character;
 
 public class InformationRetrieval {
 
 	public static void main(String[] args) throws IOException {
+		parsePreReqs("descriptions.txt");
+		parsePreReqs("test.txt");
+		parsePreReqs("test2.txt");
+
+	}
+	
+	public static List<List<String>> parsePreReqs(String textFile) throws IOException {
+		List<List<String>> preReqList = new ArrayList<List<String>>();
 		BufferedReader br = new BufferedReader(
-		        new InputStreamReader(new FileInputStream("descriptions.txt")));
+		        new InputStreamReader(new FileInputStream(textFile)));
 		try {
-			ArrayList<ArrayList> preReqs = new ArrayList<ArrayList>();
-			ArrayList<String> parsedLines = new ArrayList<String>();
 		    String line,preReqLine,betterPreReqLine, preReq;
 		    char firstD,secondD,thirdD, space, ch, chNext;
-		    //int sum = 0;
 		    while ((line = br.readLine()) != null) {
 		        if(line.toLowerCase().contains("prerequisite")) {
 		        	preReqLine = line;
@@ -33,7 +40,6 @@ public class InformationRetrieval {
 			        		if(Character.isUpperCase(ch) && Character.isUpperCase(chNext) && Character.isWhitespace(space) 
 			        				&& Character.isDigit(firstD) && Character.isDigit(secondD) && Character.isDigit(thirdD)) {
 			        			betterPreReqLine = preReqLine;
-			        			//System.out.println(betterPreReqLine);
 			        			String parsedLine = "";
 			        			for(int j = 1; j < betterPreReqLine.length(); j++) {
 					        		if(Character.isUpperCase(betterPreReqLine.charAt(j)) || Character.isDigit(betterPreReqLine.charAt(j)) || Character.isWhitespace(betterPreReqLine.charAt(j))) {
@@ -59,46 +65,35 @@ public class InformationRetrieval {
 			        			}
 			        			if(!extraParsedLine.isEmpty()) {
 			        				extraParsedLine = extraParsedLine.substring(1) + " ";
-			        				
-			        				//parsedLines.add(extraParsedLine);
-			        				//System.out.println(extraParsedLine);
 			        				int count = 0;
 			        				int k = 0;
+			        				int m = 0;
+			        				List<String> preReqs = new ArrayList<String>();
 			        				for(int j = 0; j < extraParsedLine.length(); j++) {
 			        					if(Character.isWhitespace(extraParsedLine.charAt(j))) {
 			        						count++;
 			        						if(count%2 == 0) {
-			        							preReq = extraParsedLine.substring(0,j+1);
-			        							//k = j;
-			        							extraParsedLine = extraParsedLine.substring(j+1);
-			        							System.out.println(preReq + ".");
-			        							System.out.println(extraParsedLine);
-			        							
+			        							m = j+1;
+			        							preReq = extraParsedLine.substring(k,m);
+			        							preReqs.add(preReq);
+			        							k = j+1;
 			        						}
-			        						
 			        					}
-			        					
 			        				}
-			        				//sum+= 1; //513
+			        				preReqList.add(preReqs);
 			        			}
-			        			break; //needed so it does not repeat lines
+			        			break; 
 			        		} 	
-			        		
 		        		}
-		        		
 		        	}
-		        	
-		        	
 		        }
 		    
 		    }
-		    //System.out.println(sum);
 		} finally {
 		    br.close();
 		}
-
-
+		System.out.println(Arrays.toString(preReqList.toArray()));
+		return preReqList;
 	}
-	
 
 }
