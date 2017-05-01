@@ -3,6 +3,7 @@ package hw5;
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -13,12 +14,11 @@ public class InformationRetrieval {
 
 	public static void main(String[] args) throws IOException {
 		InformationRetrieval tester = new InformationRetrieval();
-		
-		tester.parsePreReqs("descriptions.txt");
-		tester.parsePreReqs("test.txt");
-		
 		tester.parseGuidingQuestions("cogsci.txt");
-		tester.parseGuidingQuestions("test.txt");
+		//tester.parsePreReqs("descriptions.txt");
+		//tester.parsePreReqs("test.txt");
+		//tester.parsePreReqs("test2.txt");
+
 	}
 	
 	public void parsePreReqs(String textFile) throws IOException {
@@ -99,39 +99,44 @@ public class InformationRetrieval {
 	}
 	
 	public void parseGuidingQuestions(String textFile) throws IOException {
-		List<String> questions = new ArrayList<String>();
 		BufferedReader br = new BufferedReader(
 		        new InputStreamReader(new FileInputStream(textFile)));
 		try {
 			String line;
 			String question = " ";
+			int count = 0;
 			while ((line = br.readLine()) != null) {
 				if(line.toLowerCase().contains("guiding question")) {
+					
 					for(int i = 0; i <= line.length(); i++) {
+						//System.out.println(i);
 						if(i < (line.length() - 10)) {
 							if((line.toLowerCase().charAt(i) == 'q' && line.toLowerCase().charAt(i+1) == 'u' 
 									&& line.toLowerCase().charAt(i+2) == 'e'&& line.toLowerCase().charAt(i+3) == 's'
-									&& line.toLowerCase().charAt(i+4) == 't'&& line.toLowerCase().charAt(i+5) == 'i' 
-									&& line.toLowerCase().charAt(i+6) == 'o' && line.toLowerCase().charAt(i+7) == 'n' 
-									&& line.toLowerCase().charAt(i+8) == ':')) {
-										question = line.substring(i+10);
-										break;
+									&& line.toLowerCase().charAt(i+4) == 's' && line.toLowerCase().charAt(i+5) == 't'
+									&& line.toLowerCase().charAt(i+6) == 'i' && line.toLowerCase().charAt(i+7) == 'o'
+									&& line.toLowerCase().charAt(i+8) == 'n' && line.toLowerCase().charAt(i+9) == ':')) {
+										question = line.substring(i+9);
 							}
 							if((line.toLowerCase().charAt(i) == 'q' && line.toLowerCase().charAt(i+1) == 'u' 
 									&& line.toLowerCase().charAt(i+2) == 'e'&& line.toLowerCase().charAt(i+3) == 's'
-									&& line.toLowerCase().charAt(i+4) == 't'&& line.toLowerCase().charAt(i+5) == 'i' 
-									&& line.toLowerCase().charAt(i+6) == 'o' && line.toLowerCase().charAt(i+7) == 'n' 
-									&& line.toLowerCase().charAt(i+8) == 's'&& line.toLowerCase().charAt(i+9) == ':')) {
-										question = line.substring(i+11);
-										break;
+									&& line.toLowerCase().charAt(i+4) == 's' && line.toLowerCase().charAt(i+5) == 't'
+									&& line.toLowerCase().charAt(i+6) == 'i' && line.toLowerCase().charAt(i+7) == 'o'
+									&& line.toLowerCase().charAt(i+8) == 'n' && line.toLowerCase().charAt(i+9) == 's'
+									&& line.toLowerCase().charAt(i+10) == ':')) {
+										question = line.substring(i+10);
 							}
+							
 						}
+						
+						
 					}
-					questions.add(question);
-					//System.out.println(question);
+					System.out.println(question);
+					count++;
+					//break;
 				}
 			}
-			System.out.println(Arrays.toString(questions.toArray()));
+			System.out.println(count);
 			
 		} finally {
 			br.close();

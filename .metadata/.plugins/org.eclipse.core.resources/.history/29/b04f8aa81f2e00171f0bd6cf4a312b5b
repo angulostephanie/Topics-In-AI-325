@@ -1,23 +1,33 @@
 package hw5;
 
+import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.lang.Character;
 
 public class InformationRetrieval {
 
 	public static void main(String[] args) throws IOException {
+		InformationRetrieval tester = new InformationRetrieval();
+		
+		tester.parsePreReqs("descriptions.txt");
+		tester.parsePreReqs("test.txt");
+		
+		tester.parseGuidingQuestions("cogsci.txt");
+		tester.parseGuidingQuestions("test.txt");
+	}
+	
+	public void parsePreReqs(String textFile) throws IOException {
+		List<List<String>> preReqList = new ArrayList<List<String>>();
 		BufferedReader br = new BufferedReader(
-		        new InputStreamReader(new FileInputStream("descriptions.txt")));
+		        new InputStreamReader(new FileInputStream(textFile)));
 		try {
-			ArrayList<ArrayList> preReqs = new ArrayList<ArrayList>();
-			ArrayList<String> parsedLines = new ArrayList<String>();
 		    String line,preReqLine,betterPreReqLine, preReq;
 		    char firstD,secondD,thirdD, space, ch, chNext;
-		    //int sum = 0;
 		    while ((line = br.readLine()) != null) {
 		        if(line.toLowerCase().contains("prerequisite")) {
 		        	preReqLine = line;
@@ -33,7 +43,6 @@ public class InformationRetrieval {
 			        		if(Character.isUpperCase(ch) && Character.isUpperCase(chNext) && Character.isWhitespace(space) 
 			        				&& Character.isDigit(firstD) && Character.isDigit(secondD) && Character.isDigit(thirdD)) {
 			        			betterPreReqLine = preReqLine;
-			        			//System.out.println(betterPreReqLine);
 			        			String parsedLine = "";
 			        			for(int j = 1; j < betterPreReqLine.length(); j++) {
 					        		if(Character.isUpperCase(betterPreReqLine.charAt(j)) || Character.isDigit(betterPreReqLine.charAt(j)) || Character.isWhitespace(betterPreReqLine.charAt(j))) {
@@ -58,47 +67,75 @@ public class InformationRetrieval {
 			        				} 
 			        			}
 			        			if(!extraParsedLine.isEmpty()) {
-			        				extraParsedLine = extraParsedLine.substring(1) + " .";
-			        				
-			        				//parsedLines.add(extraParsedLine);
-			        				//System.out.println(extraParsedLine);
+			        				extraParsedLine = extraParsedLine.substring(1) + " ";
 			        				int count = 0;
 			        				int k = 0;
+			        				int m = 0;
+			        				List<String> preReqs = new ArrayList<String>();
 			        				for(int j = 0; j < extraParsedLine.length(); j++) {
 			        					if(Character.isWhitespace(extraParsedLine.charAt(j))) {
 			        						count++;
 			        						if(count%2 == 0) {
-			        							preReq = extraParsedLine.substring(0+k,j+1+k);
+			        							m = j+1;
+			        							preReq = extraParsedLine.substring(k,m);
+			        							preReqs.add(preReq);
 			        							k = j+1;
-			        							//extraParsedLine = extraParsedLine.substring(j+1);
-			        							System.out.println(preReq);
-			        							System.out.println(extraParsedLine);
-			        							
 			        						}
-			        						
 			        					}
-			        					
 			        				}
-			        				//sum+= 1; //513
+			        				preReqList.add(preReqs);
 			        			}
-			        			break; //needed so it does not repeat lines
+			        			break; 
 			        		} 	
-			        		
 		        		}
-		        		
 		        	}
-		        	
-		        	
 		        }
 		    
 		    }
-		    //System.out.println(sum);
 		} finally {
 		    br.close();
 		}
-
-
+		System.out.println(Arrays.toString(preReqList.toArray()));
 	}
 	
-
+	public void parseGuidingQuestions(String textFile) throws IOException {
+		List<List<String>> questionList = new ArrayList<List<String>>();
+		BufferedReader br = new BufferedReader(
+		        new InputStreamReader(new FileInputStream(textFile)));
+		try {
+			String line;
+			String question = " ";
+			while ((line = br.readLine()) != null) {
+				if(line.toLowerCase().contains("guiding question")) {
+					List<String> questions = new ArrayList<String>();
+					for(int i = 0; i <= line.length(); i++) {
+						if(i < (line.length() - 10)) {
+							if((line.toLowerCase().charAt(i) == 'q' && line.toLowerCase().charAt(i+1) == 'u' 
+									&& line.toLowerCase().charAt(i+2) == 'e'&& line.toLowerCase().charAt(i+3) == 's'
+									&& line.toLowerCase().charAt(i+4) == 't'&& line.toLowerCase().charAt(i+5) == 'i' 
+									&& line.toLowerCase().charAt(i+6) == 'o' && line.toLowerCase().charAt(i+7) == 'n' 
+									&& line.toLowerCase().charAt(i+8) == ':')) {
+										question = line.substring(i+10);
+							}
+							if((line.toLowerCase().charAt(i) == 'q' && line.toLowerCase().charAt(i+1) == 'u' 
+									&& line.toLowerCase().charAt(i+2) == 'e'&& line.toLowerCase().charAt(i+3) == 's'
+									&& line.toLowerCase().charAt(i+4) == 't'&& line.toLowerCase().charAt(i+5) == 'i' 
+									&& line.toLowerCase().charAt(i+6) == 'o' && line.toLowerCase().charAt(i+7) == 'n' 
+									&& line.toLowerCase().charAt(i+8) == 's'&& line.toLowerCase().charAt(i+9) == ':')) {
+										question = line.substring(i+11);
+							}
+						}
+					}
+					questions.add(question);
+					//System.out.println(question);
+				}
+				System.out.println(question);
+				//questionList.add(questions);
+			}
+			
+			
+		} finally {
+			br.close();
+		}
+	}
 }

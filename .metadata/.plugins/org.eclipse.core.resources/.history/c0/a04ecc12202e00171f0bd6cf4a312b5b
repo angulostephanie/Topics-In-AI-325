@@ -99,7 +99,7 @@ public class InformationRetrieval {
 	}
 	
 	public void parseGuidingQuestions(String textFile) throws IOException {
-		List<String> questions = new ArrayList<String>();
+		List<List<String>> questionList = new ArrayList<List<String>>();
 		BufferedReader br = new BufferedReader(
 		        new InputStreamReader(new FileInputStream(textFile)));
 		try {
@@ -107,6 +107,7 @@ public class InformationRetrieval {
 			String question = " ";
 			while ((line = br.readLine()) != null) {
 				if(line.toLowerCase().contains("guiding question")) {
+					List<String> questions = new ArrayList<String>();
 					for(int i = 0; i <= line.length(); i++) {
 						if(i < (line.length() - 10)) {
 							if((line.toLowerCase().charAt(i) == 'q' && line.toLowerCase().charAt(i+1) == 'u' 
@@ -128,10 +129,13 @@ public class InformationRetrieval {
 						}
 					}
 					questions.add(question);
-					//System.out.println(question);
+					System.out.println(question);
 				}
+				//break;
+				//System.out.println(question);
+				//questionList.add(questions);
 			}
-			System.out.println(Arrays.toString(questions.toArray()));
+			
 			
 		} finally {
 			br.close();

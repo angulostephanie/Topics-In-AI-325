@@ -128,8 +128,12 @@ public class InformationRetrieval {
 						}
 					}
 					questions.add(question);
-					//System.out.println(question);
+					System.out.println(question);
 				}
+				
+				//break;
+				//System.out.println(question);
+				//questionList.add(questions);
 			}
 			System.out.println(Arrays.toString(questions.toArray()));
 			
