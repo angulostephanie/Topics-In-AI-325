@@ -1,0 +1,104 @@
+Wednesday (1/25)Wednesday (1/25) Guiding question: What is cognitive science? And, who cares?
+
+Margaret Boden's: Mind as Machine: A history of cognitive science (Chap 1) File Daily reading response Assignment What is Cognitive Science? (notes) File Friday (1/27)Friday (1/27)The Mind Body Problem: The "isms"
+Guiding question: What is the mind body problem? Why does it matter? Why is it so hard to solve?
+Clark - Mind-Body Problem File Daily reading response Assignment How do we Understand the Mind? (notes) File Monday (1/30)Monday (1/30)Neurons and Neuroanatomy
+Guiding Question: What are concept vs. grandmother cells? Are there advantages of having populations of neurons encode stimuli rather than individual "grandmother cells"? 
+Explore Robert Stufflebeam's Module, "Neurons, Synapses, Action Potentials, and Neurotransmission" URL Quiroga, Fried, & Koch (2013). Brain Cells for Grandmother. Scientific American. File *Recommended*: Brain Facts- Read Intro & Chapter 1 File Daily Reading Response Assignment Neurons & coding (notes) File Wednesday (2/1)Wednesday (2/1)Brain Plasticity
+Guiding Question: How might life experience fine-tune the brain's circuitry? How much leeway do our experiences have in doing so? Can life experience turn your visual cortex into the motor cortex? Why/why not?
+Melchner et al. (2000). Rewiring cortex in ferrets File Tracey Shors (2009). Saving New Brain Cells. Scientific American. File Richard Restak's, New Brain. Read Chapters 1 & 2. File Daily Reading Response Assignment Brain Plasticity (notes) File Friday (2/3)Friday (2/3)Guiding question: What do the connection weights represent? What does the activation threshold represent? What are some properties of real neurons that are not captured by ANNs? Why are they not captured?
+
+Stufflebeam (2006). Connectionism URLRead pages 1 and 2.
+
+Hinton (1992). How Neural Networks Learn from Experience File Artificial Neural Network Web App URLPlay around with this web app, which demonstrates how a simple neural network works.
+Daily Reading Response Assignment Artificial Neural Networks (notes) File Monday (2/6)Monday (2/6)Guiding Question: What is the relationship between the classic, simple ANNs and the multi-layer ANNs? Is a functional brain just an issue of including more neurons? Why/Why not?
+Inceptionism: Going Deeper into Neural Networks (2015) URL Interview with Geoffrey Hinton (2015) URL Eliasmith TED Talk: How to Build a Brain URL Daily Reading Response Assignment Deep Learning (notes) File Wednesday (2/8)Wednesday (2/8)Visual perception
+Guiding Questions: Is seeing a faithful replication of reality? Why/why not? In what ways is seeing based on your expectations and experiences? 
+Ramachandran, Phantoms in the Brain (Chapter 4) File Michael Shermer's TED Talk (full) URL Daily Reading Response Assignment Visual Perception (notes) File Friday (2/10)Friday (2/10)Multisensory Perception
+Guiding Question: What is synesthesia? What do you think makes it unique from "standard" multisensory perception? 
+Oliver Sacks . Musicophilia Chapter 14 File Virginia Hughes (2014). Sound and touch collide. (Nautilus) URL Supplemental * Shams & Shimojo (2000). What you see is what you hear. Nature File Daily Reading Response Assignment Multisensory Perception (notes) File Monday (2/13)Monday (2/13)Qualia
+Guiding Questions: Summarize both Nagel's and Jackson's arguments. What conclusions do they reach? How do they arrive at those conclusions? Start thinking about what your own stance on the arguments are.
+Jackson (1986). What Mary Didn't Know. URL Nagel (1974). What is it like to be a bat? URL Daily Reading Response Assignment Consciousness and Qualia (notes) File Wednesday (2/15)Wednesday (2/15)A Neuroscience of Consciousness
+Guiding Questions: Do you believe that Crick & Koch's framework (or any of the neuroscientific frameworks you read about for today's class) adequately addresses the "hard" problem of consciousness? Why/why not? 
+Crick & Koch (2003). A framework for consciousness. Nature Neuroscience File Susan Blackmore, Chapters 10 & 11 File Daily Reading Response Assignment Neural Correlates of Consciousness (notes) File Friday (2/17)Friday (2/17)Guiding Question: What does understanding Marr's levels of analysis let you explain that you couldn't before?
+
+Marr (1980). Understanding Complex Information-Processing Systems. File They're Made of Meat! URL Daily Reading Response Assignment Marr's Levels of Analysis (notes) File Monday (2/20)Monday (2/20)No Class (President's Day)
+
+Wednesday (2/22)Wednesday (2/22)Guiding Questions: Why are there three levels and three stances? How do Dennett's stances correspond to Marr's levels?
+
+Dennett (1981). True Believers: The Intentional Strategy and Why it Works. File Daily Reading Response Assignment Dennett (Slides) File Friday (2/24)Friday (2/24)Guiding Questions: Summarize Libet's experiments and conclusions about free will. Then, try to take a stance on whether we have free will or not. Support your argument.
+Vohs & Schooler (2008). The Value of Believing in Free Will File Susan Blackmore, Chapter 9 File *Optional* Rigoni et al (2011). The brain minds whether we believe in free will or not. File Daily Reading Response Assignment Free will (Slides) File Monday (2/27)Monday (2/27)Mindsets matter
+Guiding questions: How might your own mindsets, expectations, doubts, and anxieties influence your school/exam performance? 
+Ramirez & Beilock. (2011). Writing about test worries boosts exam performance in the classroom. Science File Richard A. Friedman, "Can you get smarter?" URL *Recommended*: Po Bronson, "How Not to Talk to Your Kids" URL *Recommended*: What if age was nothing but a number? URL Daily Reading Response Assignment Cogs101 Mindsets (Slides) File Wednesday (3/1)Wednesday (3/1)Midterm Review
+
+1. Answer the questions in your study guide, and be prepared with specific questions/unresolved issues. 
+
+2. For each lecture, select three to four topics, ideas, or experiments that you think are important. Once you have done this for all topics, draw lines between topics that are related to create a concept map, focusing on connections between topics from different lectures. You can either do this by hand or use this online tool (https://www.yworks.com/yed-live/). Bring your finished concept map to class. If you are feeling ambitious, color each topic by whether they are philosophical, psychological, or computational in nature (or a mixture, or something else!).
+
+A small example concept map is shown below:
+
+
+Friday (3/3)Friday (3/3)Midterm
+
+Monday (3/13)Monday (3/13)Linguistics
+Guiding Questions: Is Doge Speak considered grammatic under normal English? If it isn't, how come you can understand it?
+Prescriptive and Descriptive Rules URL A Linguist Explains the Grammar of Doge. Wow. URL Daily Reading Response Assignment Linguistics (notes) File Wednesday (3/15)Wednesday (3/15)Language Acquisition
+Guiding questions: How do babies learn language? Do they have to be taught or do they simply pick it up? How do you know?
+Chapter 2 from Steve Pinker's Language Instinct File Baby geniuses URL Daily Reading Response Assignment Applying Deep Learning to Speech Generation URLHere's an popular science article about using Deep Learning to generate speech, including prosody.
+
+Language Acquisition (Slides) File Friday (3/17)Friday (3/17)Guiding Questions: Does the Russian Blues study demonstrate that people from different cultures perceive color differently? Be specific.
+Winawer et al (2007). Russian blues reveal effects of language on color discrimination. PNAS URL Deutscher (2010). Does language shape how you think? (NYTimes) URL Colapinto. (2007) The Interpreter (New Yorker) URL Daily Reading Response Assignment Complete the Mid-Semester Evaluation URL Language and thought File Monday (3/20)Monday (3/20)Language and the brain
+Guiding Questions: Describe how Gazzaniga, Sperry, & their team were able to uncover the deficits involved in split brain patients. Then, discuss how specific processes in the brain give rise to comprehension and production of language. 
+Daily Reading Response Assignment Gazzaniga (2005). Forty-five years of split-brain research and still going strong. Nature Reviews Neuroscience File Language & the brain (slides) File You are NOT responsible for any of the material here. However, I posted it in case you are interested and would like to explore it and discuss in office hours.
+Wednesday (3/22)Wednesday (3/22)Guiding Questions: Google "Turing Test Passed" and look at some of the news articles. How is that "Turing Test" different from the test described in Turing's paper?
+
+Turing (1950). Computing Machinery and Intelligence. URL Searle (1980). Minds, Brains, and Programs. URL Daily Reading Response Assignment Friday (3/24)Friday (3/24)Guiding Question: From these readings and your own experience, what aspects of language are computers failing at? What is difficult about these aspects of language?
+
+20 Moments When Siri Failed Us URL Lenat (1980). From 2001 to 2001: Common Sense and the Mind of HAL. URL Build Your Own Chatbot URLThis is a modifiable chatbot, initially meant to simulate a psychotherapist. Try to have a conversation with it - where does the conversation break down?
+On the left side of the app, you can see the rules that the chatbot is using. See if you can get particular responses from the chatbot. You can also change the rules - you won't break the app. If you're feeling ambitious, see if you can get the chatbot to respond appropriately to "My name is Justin".
+Daily Reading Response Assignment Natural Language Processing (notes) File AI Almost Wins National Literary Prize URLOptional
+
+Monday (3/27)Monday (3/27)Guiding Question: Are deductive arguments always correct? Are inductive arguments always correct?
+
+Establishing Arguments (Deductive and Inductive Logic) URL Logic in Argumentative Writing URL Three Fallacies for the Election Season URL Daily Reading Response Assignment Video Guide to Common Fallacies URLOptional
+
+Rheto-logical Fallacies URLOptional
+
+Logic and Rationality (notes) File Wednesday (3/29)Wednesday (3/29)Heuristics and biases
+Guiding Questions: Describe 2-3 common forms of cognitive bias in human thinking. Can you think of examples of them in your everyday life? Can you think of ways to overcome some of these biases?
+Eliezer Yudkowsky, "Cognitive Biases Potentially Affecting Judgment of Global Risks" File De Martino et al, "Frames, Biases, and Rational Decision-Making in the Human Brain" File Daily Reading Response Assignment Heuristics & Biases Notes File Friday (3/31)Friday (3/31)Emotions & Reasoning
+Guiding questions: In what ways are emotions intricately linked to cognition? Why do you think emotion and cognition were traditionally separate fields?
+Dolan (2002). Emotion, Cognition, & Behavior. File Daily Reading Response Assignment Emotions cognition Notes File Monday (4/3)Monday (4/3)Guiding Question: How do you explain base-rate neglect in terms of Bayesian reasoning?
+
+Conditional Probability Explained Visually URL Silver (2012). Less and Less and Less Wrong. File Daily Reading Response Assignment Bonilla (2009). Visualizing Bayes' Theorem. URLOptional Bayesian Network Demo Page Bayesian Reasoning (notes) File Wednesday (4/5)Wednesday (4/5)Guiding Question: Think back to the illusions and fallacies you have learned about over this semester. Which of them can be explained by bounded rationality? Which of them cannot?
+
+Gigerenzer (2008). I Think, Therefore I Err. URL Alternate Link URL If the library link does not work for you, here is a pdf you can download.
+
+I think, therefore I err (PDF) File Daily Reading Response Assignment Bounded Rationality (notes) File Friday (4/7)Friday (4/7)Guiding Question: How would you make a computer play Tic-Tac-Toe? In what ways might that be different from a computer playing chess or go?
+Auerbach (2014). Why the Chess Computer Deep Blue Played Like a Human. URL Engelking (2016). Artificial Intelligence Just Mastered Go, But One Game Still Gives AI Trouble. URL Minsky (1982). Why People Think Computers Can't. URL Daily Reading Response Assignment Introduction to A* URLOptional
+
+AI and Search (notes) File Monday (4/10)Monday (4/10)Guiding Questions: Would you consider the music from the NYTimes article "creative"? Why/Why not?
+
+Boden (2009). Computational Models of Creativity File From Jingles to Pop Hits, A.I. Is Music to Some Ears (NYTimes) URL Also glance through each of the following links, which provide examples of what may (not) be considered creativity. You do not have to fully understand how they work, or even read every word; it's enough to what they're trying to accomplish and how good/bad the results are.
+
+What Happens When Algorithms Design a Concert Hall? URL The Alien Style of Deep Learning Generative Design URL Generating Naming Language URL Genetic Cars 2 URL Daily Reading Response Assignment Computational Creativity (notes) File Wednesday (4/12)Wednesday (4/12)Harnard: Creativity or Magic? File RadioLab's Unraveling Bolero Podcast URL Zhong et al. The role of the unconscious in creativity File Maurice Ravel's Bolero File Daily Reading Response Assignment Creativity (Slides) File Friday (4/14)Friday (4/14)Guiding Questions: How do brain-machine interfaces work? How do they capitalize on the brain's capacity for plasticity? 
+Lebedev et al (2006). Brain Machine Interfaces. Trends in Neurosciences. File Nicolelis (2012). Mind in Motion. Scientific American File Daily Reading Response Assignment Cool videos from the lecture that we didn't to watch in class. These are examples of what BMIs have been used to do recently!
+Two arms controlled with only monkeys thoughts File Monkeys brain controls robotic arm File Monkeys thoughts control walking robot.mov File Paraplegic Man In Robotic Suit Kicks Off World Cup File Paralysed woman moves robot with her mind - by Nature Video File BMIs (Slides) File Monday (4/17)Monday (4/17)Peer Editing of News Report
+
+Bring two physical copies of your paper draft to class.
+
+Peer Review Instructions File Wednesday (4/19)Wednesday (4/19)Guiding Question: From a computational-level, rational analysis perspective, what is the goal of memory? Why don't we have perfect memory?
+
+Radiolab: Eternal Sunshine of the Spotless Rat URL Terry (1988). Everyday Forgetting: Data from a Diary Study. File Bjork and Bjork (1988). On the Adaptive Aspects of Retrieval Failure in Autobiographical Memory. File Daily Reading Response Assignment Memory (notes) File Friday (4/21)Friday (4/21)Guiding Question: What determines who "you" are? What can (and can't) be changed for you to still be you?
+
+"Where am I". Dan Dennett URL Daily Reading Response Assignment Personal Identity (notes) File Monday (4/24)Monday (4/24)Please come to class prepared to discuss and debate: To what extent do the sign language of apes, the self recognition of elephants, etc. suggest that animals are intelligent, conscious agents? 
+
+Daily Reading Response Assignment Some resources (you don't need to have read them all, but scan through at least some of them)
+Philosophical overviews Page Associative Mechanisms Allow for Social Learning and Cultural Transmission of String Pulling in an Insect URL Can my cat have an existential crisis? URL What can pigeons teach us about love? URL Animal art? URL More examples of Animal Intelligence Page "A Science of the Soul" (New Yorker Story on Dan Dennett) File Discussion Questions File Wednesday (4/26)Wednesday (4/26)We will be extending our discussion of consciousness and intelligence to computers and AI. To prepare for class, go back over the discussion questions from Monday, and consider whether the points we raised on Monday also apply to computers. If they do, how? If they don't, why not?
+
+Discussion Questions File Friday (4/28)Friday (4/28)Jeopardy
+Jeopardy! Questions File Monday (5/1)Monday (5/1)Summary, Evaluations
+
+
+Friday (5/5)Friday (5/5)Final Exam (8:30-11:30am)
+

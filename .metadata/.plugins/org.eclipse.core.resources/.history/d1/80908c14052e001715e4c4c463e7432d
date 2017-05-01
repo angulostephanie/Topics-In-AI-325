@@ -102,14 +102,11 @@ public class InformationRetrieval {
 		        new InputStreamReader(new FileInputStream(textFile)));
 		try {
 			String line;
-			int count = 0;
 			while ((line = br.readLine()) != null) {
 				if(line.toLowerCase().contains("guiding question")) {
 					System.out.println(line);
-					count++;
 				}
 			}
-			System.out.println(count);
 			
 		} finally {
 			br.close();

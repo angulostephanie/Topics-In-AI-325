@@ -14,10 +14,9 @@ public class InformationRetrieval {
 
 	public static void main(String[] args) throws IOException {
 		InformationRetrieval tester = new InformationRetrieval();
-		tester.parseGuidingQuestions("cogsci.txt");
-		//tester.parsePreReqs("descriptions.txt");
-		//tester.parsePreReqs("test.txt");
-		//tester.parsePreReqs("test2.txt");
+		tester.parsePreReqs("descriptions.txt");
+		tester.parsePreReqs("test.txt");
+		tester.parsePreReqs("test2.txt");
 
 	}
 	
@@ -102,14 +101,11 @@ public class InformationRetrieval {
 		        new InputStreamReader(new FileInputStream(textFile)));
 		try {
 			String line;
-			int count = 0;
 			while ((line = br.readLine()) != null) {
 				if(line.toLowerCase().contains("guiding question")) {
 					System.out.println(line);
-					count++;
 				}
 			}
-			System.out.println(count);
 			
 		} finally {
 			br.close();

@@ -3,7 +3,6 @@ package hw5;
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -13,15 +12,13 @@ import java.lang.Character;
 public class InformationRetrieval {
 
 	public static void main(String[] args) throws IOException {
-		InformationRetrieval tester = new InformationRetrieval();
-		tester.parseGuidingQuestions("cogsci.txt");
-		//tester.parsePreReqs("descriptions.txt");
-		//tester.parsePreReqs("test.txt");
-		//tester.parsePreReqs("test2.txt");
+		parsePreReqs("descriptions.txt");
+		parsePreReqs("test.txt");
+		parsePreReqs("test2.txt");
 
 	}
 	
-	public void parsePreReqs(String textFile) throws IOException {
+	public static List<List<String>> parsePreReqs(String textFile) throws IOException {
 		List<List<String>> preReqList = new ArrayList<List<String>>();
 		BufferedReader br = new BufferedReader(
 		        new InputStreamReader(new FileInputStream(textFile)));
@@ -96,23 +93,7 @@ public class InformationRetrieval {
 		    br.close();
 		}
 		System.out.println(Arrays.toString(preReqList.toArray()));
+		return preReqList;
 	}
-	public void parseGuidingQuestions(String textFile) throws IOException {
-		BufferedReader br = new BufferedReader(
-		        new InputStreamReader(new FileInputStream(textFile)));
-		try {
-			String line;
-			int count = 0;
-			while ((line = br.readLine()) != null) {
-				if(line.toLowerCase().contains("guiding question")) {
-					System.out.println(line);
-					count++;
-				}
-			}
-			System.out.println(count);
-			
-		} finally {
-			br.close();
-		}
-	}
+
 }
